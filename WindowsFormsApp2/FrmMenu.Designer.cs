@@ -30,13 +30,14 @@ namespace WindowsFormsApp2
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.PnlEcran = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.TsBtnCategories = new System.Windows.Forms.ToolStripButton();
             this.TsBtnProduits = new System.Windows.Forms.ToolStripButton();
             this.TsBtnClients = new System.Windows.Forms.ToolStripButton();
             this.TsBtnCommandes = new System.Windows.Forms.ToolStripButton();
             this.TSBtnFermer = new System.Windows.Forms.ToolStripButton();
+            this.PnlEcran = new System.Windows.Forms.Panel();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -63,15 +64,6 @@ namespace WindowsFormsApp2
             this.splitContainer1.SplitterDistance = 142;
             this.splitContainer1.TabIndex = 0;
             // 
-            // PnlEcran
-            // 
-            this.PnlEcran.BackColor = System.Drawing.SystemColors.Control;
-            this.PnlEcran.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlEcran.Location = new System.Drawing.Point(0, 0);
-            this.PnlEcran.Name = "PnlEcran";
-            this.PnlEcran.Size = new System.Drawing.Size(800, 304);
-            this.PnlEcran.TabIndex = 0;
-            // 
             // toolStrip1
             // 
             this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,7 +73,8 @@ namespace WindowsFormsApp2
             this.TsBtnProduits,
             this.TsBtnClients,
             this.TsBtnCommandes,
-            this.TSBtnFermer});
+            this.TSBtnFermer,
+            this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 132);
@@ -138,6 +131,24 @@ namespace WindowsFormsApp2
             this.TSBtnFermer.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.TSBtnFermer.Click += new System.EventHandler(this.TSBtnFermer_Click);
             // 
+            // PnlEcran
+            // 
+            this.PnlEcran.BackColor = System.Drawing.SystemColors.Control;
+            this.PnlEcran.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlEcran.Location = new System.Drawing.Point(0, 0);
+            this.PnlEcran.Name = "PnlEcran";
+            this.PnlEcran.Size = new System.Drawing.Size(800, 304);
+            this.PnlEcran.TabIndex = 0;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::WindowsFormsApp2.Properties.Resources.téléchargement;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(104, 129);
+            this.toolStripButton1.Text = "About";
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -168,5 +179,6 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.ToolStripButton TsBtnClients;
         private System.Windows.Forms.ToolStripButton TsBtnCommandes;
         private System.Windows.Forms.ToolStripButton TSBtnFermer;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
